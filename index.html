@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Factory ClickerGame</title>
+</head>
+<body>
+  <h1>Army Nation</h1>
+  <!--Command-->
+  <div class="container" style="padding: 35px;">
+    <div class="row">
+      <div class="col" id="soldiers"></div>
+      <div class="col" id="ammunition"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+  </div>
+  <!--Headquarters Organization-->
+  <div class="container">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#barracks" role="tab" aria-controls="home" aria-selected="true">Barrack's</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#warehouse" role="tab" aria-controls="profile" aria-selected="false">Warehouse</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#supplies" role="tab" aria-controls="contact" aria-selected="false">Supplies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#land" role="tab" aria-controls="contact" aria-selected="false">Land Vehicles</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#air" role="tab" aria-controls="contact" aria-selected="false">Airplanes</a>
+      </li>
+    </ul>
+    <!--Barrack's - TAB 1-->
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="barracks" role="tabpanel" aria-labelledby="barracks-tab">
+        <div class="row">
+          <div class="col">
+            <div style="padding: 10px;">
+              <div class="card bg-light mb-3" style="max-width: 20rem;">
+                <div class="card-header">Iron</div>
+                <div class="card-body">
+                  <!--Label's dos valores-->
+                  <h5 id=""></h5>
+                  <h5 id=""></h5>
+                  <h5 id=""></h5> 
+                  <h5 id=""></h5>                 
+                  <!--Botões de ações-->            
+                  <button onclick ="" class="btn btn-danger btn-sm">Recruit</button>
+                  <button onclick ="" class="btn btn-success btn-sm"></button>
+                  <button onclick ="" class="btn btn-primary btn-sm"></button>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+      <!--Warehouse -TAB 2-->
+      <div class="tab-pane fade" id="warehouse" role="tabpanel" aria-labelledby="warehouse-tab">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="row">
+            <div class="col">
+              Conteúdo da ABA Warehouse
+              <!--
+              <div style="padding: 10px;">
+                <div class="card bg-light mb-3" style="max-width: 20rem;">
+                  <div class="card-header">Steel Mills</div>
+                  <div class="card-body">
+                    Label's dos valores
+                    <h5 id="iron-ingot"></h5>
+                    <h5 id="amount-workers-smelter"></h5>
+                    <h5 id="workers-salary-smelter"></h5> 
+                    <h5 id="iron-ingot-selling-value"></h5>                 
+                    Botões de ações           
+                    <button onclick ="ironSmelter()" class="btn btn-danger btn-sm">Smelter Iron</button>
+                    <button onclick ="sellIronIngot()" class="btn btn-success btn-sm" id="sell-iron"></button>
+                    <button onclick ="hireNewWorkersIronSmelter()" class="btn btn-primary btn-sm" id="hire-workers-ironmine"></button>
+                  </div>
+                </div>
+              </div>
+            -->
+            </div>          
+          </div>
+        </div>
+      </div>
+      <!--Supplies - TAB 3-->
+      <div class="tab-pane fade" id="supplies" role="tabpanel" aria-labelledby="supplies-tab">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="row">
+            <div class="col">
+              Conteúdo da ABA SUPPLIES
+              <!--
+              <div style="padding: 10px;">
+                <div class="card bg-light mb-3" style="max-width: 20rem;">
+                  <div class="card-header">Steel Mills</div>
+                  <div class="card-body">
+                    Label's dos valores
+                    <h5 id="iron-ingot"></h5>
+                    <h5 id="amount-workers-smelter"></h5>
+                    <h5 id="workers-salary-smelter"></h5> 
+                    <h5 id="iron-ingot-selling-value"></h5>                 
+                    Botões de ações          
+                    <button onclick ="ironSmelter()" class="btn btn-danger btn-sm">Smelter Iron</button>
+                    <button onclick ="sellIronIngot()" class="btn btn-success btn-sm" id="sell-iron"></button>
+                    <button onclick ="hireNewWorkersIronSmelter()" class="btn btn-primary btn-sm" id="hire-workers-ironmine"></button>
+                  </div>
+                </div>
+              </div>
+              -->
+            </div>
+            -->        
+          </div>
+        </div>
+      </div>
+      <!--Land Vehicle - TAB 3-->
+      <div class="tab-pane fade" id="land" role="tabpanel" aria-labelledby="land-tab">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="row">
+            <div class="col">
+              Conteúdo da ABA LAND VEHICLES
+              <!--
+              <div style="padding: 10px;">
+                <div class="card bg-light mb-3" style="max-width: 20rem;">
+                  <div class="card-header">Steel Mills</div>
+                  <div class="card-body">
+                    Label's dos valores
+                    <h5 id="iron-ingot"></h5>
+                    <h5 id="amount-workers-smelter"></h5>
+                    <h5 id="workers-salary-smelter"></h5> 
+                    <h5 id="iron-ingot-selling-value"></h5>                 
+                    Botões de ações         
+                    <button onclick ="ironSmelter()" class="btn btn-danger btn-sm">Smelter Iron</button>
+                    <button onclick ="sellIronIngot()" class="btn btn-success btn-sm" id="sell-iron"></button>
+                    <button onclick ="hireNewWorkersIronSmelter()" class="btn btn-primary btn-sm" id="hire-workers-ironmine"></button>
+                  </div>
+                </div>
+              </div>
+              -->
+            </div>          
+          </div>
+        </div>
+      </div>
+      <!--Airplanes - TAB 3-->
+      <div class="tab-pane fade" id="air" role="tabpanel" aria-labelledby="air-tab">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="row">
+            <div class="col">
+              Conteúdo da ABA AIRPLANES
+              <!--
+              <div style="padding: 10px;">
+                <div class="card bg-light mb-3" style="max-width: 20rem;">
+                  <div class="card-header">Steel Mills</div>
+                  <div class="card-body">
+                    Label's dos valores
+                    <h5 id="iron-ingot"></h5>
+                    <h5 id="amount-workers-smelter"></h5>
+                    <h5 id="workers-salary-smelter"></h5> 
+                    <h5 id="iron-ingot-selling-value"></h5>                 
+                    Botões de ações         
+                    <button onclick ="ironSmelter()" class="btn btn-danger btn-sm">Smelter Iron</button>
+                    <button onclick ="sellIronIngot()" class="btn btn-success btn-sm" id="sell-iron"></button>
+                    <button onclick ="hireNewWorkersIronSmelter()" class="btn btn-primary btn-sm" id="hire-workers-ironmine"></button>
+                  </div>
+                </div>
+              </div>
+              -->
+            </div>          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+  <script src="js_external/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
